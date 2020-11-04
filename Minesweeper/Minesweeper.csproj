@@ -95,7 +95,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Images\box.png" />
+    <Content Include="Images\congratulations.png" />
+    <Content Include="Images\sad.png" />
     <Content Include="Images\bomb.png" />
     <Content Include="Images\flag.png" />
     <Content Include="Scripts\bootstrap.js" />

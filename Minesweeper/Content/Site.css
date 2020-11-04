@@ -32,6 +32,10 @@ button {
     padding: 0;
 }
 
+img {
+    width: 30px;
+}
+
 .box {
     font-size: 20px;
     font-weight: 900;

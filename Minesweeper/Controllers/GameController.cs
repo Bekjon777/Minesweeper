@@ -271,6 +271,26 @@ namespace Minesweeper.Controllers
             return View("Index", buttons);
         }
 
+        public bool GameIsWon()
+        {
+            int openBlanks = 0;
+            foreach (ButtonModel button in buttons)
+            {
+                if (button.Safety != "bomb" && button.Safety != "exploded" && button.State == true)
+                {
+                    openBlanks++;
+                }
+            }
+            if (openBlanks == 381)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         [HttpPost]
         public PartialViewResult HandleButtonClick(string mine)
         {
@@ -284,6 +304,7 @@ namespace Minesweeper.Controllers
                 }
                 else if (buttons[index].Safety == "bomb")
                 {
+                    buttons[0].Winner = 2;
                     buttons[index].Safety = "exploded";
                     foreach (ButtonModel button in buttons)
                     {
@@ -295,6 +316,16 @@ namespace Minesweeper.Controllers
                     }
                 }
             }
+
+            if (GameIsWon())
+            {
+                buttons[0].Winner = 3;
+                foreach (ButtonModel button in buttons)
+                {
+                    button.Game = false;
+                }
+            }
+
             return PartialView("_GameTable", buttons);
         }
 
