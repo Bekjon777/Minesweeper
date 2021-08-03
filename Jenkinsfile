@@ -17,7 +17,7 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        sh "ansible-playbook /etc/ansible/win-deploy.yml -i /etc/ansible/hosts --extra-vars 'app_name=${app_name} app_pool=${app_pool} workspace=${env.WORKSPACE}' "
+        sh "ansible-playbook /etc/ansible/win-deploy.yml -i /etc/ansible/hosts --extra-vars 'app_name=${app_name} app_pool=${app_pool} source=${env.WORKSPACE}/${app_name}/bin/' "
       }
     }
   }
