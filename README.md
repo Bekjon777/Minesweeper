@@ -1,1 +1,1 @@
-# Minesweeper game using ASP.NET MVC
+# Minesweeper game using ASP.NET MVC template
