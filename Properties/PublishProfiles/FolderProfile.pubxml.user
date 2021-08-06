@@ -4,10 +4,16 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <_PublishTargetUrl>C:\Users\bek\source\repos\New folder</_PublishTargetUrl>
-    <History>True|2021-08-04T00:43:21.3032122Z;</History>
+    <_PublishTargetUrl>C:\Users\bek\source\repos\minesweeper</_PublishTargetUrl>
+    <History>True|2021-08-05T15:31:27.5890313Z;True|2021-08-03T20:43:21.3032122-04:00;</History>
   </PropertyGroup>
   <ItemGroup>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>08/05/2021 11:31:25</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>08/05/2021 11:31:25</publishTime>
+    </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>08/03/2021 20:19:21</publishTime>
     </File>
@@ -15,10 +21,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/03/2021 20:19:21</publishTime>
     </File>
     <File Include="bin/Minesweeper.dll">
-      <publishTime>08/03/2021 20:43:18</publishTime>
+      <publishTime>08/05/2021 11:31:19</publishTime>
     </File>
     <File Include="bin/Minesweeper.pdb">
-      <publishTime>08/03/2021 20:43:18</publishTime>
+      <publishTime>08/05/2021 11:31:19</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>08/03/2021 20:19:21</publishTime>
@@ -242,6 +248,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Images/sad.png">
       <publishTime>08/03/2021 20:19:20</publishTime>
     </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>08/05/2021 11:31:20</publishTime>
+    </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>08/03/2021 20:30:33</publishTime>
     </File>
@@ -303,7 +312,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>08/03/2021 20:19:20</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>08/03/2021 20:43:18</publishTime>
+      <publishTime>08/05/2021 11:31:19</publishTime>
     </File>
   </ItemGroup>
 </Project>

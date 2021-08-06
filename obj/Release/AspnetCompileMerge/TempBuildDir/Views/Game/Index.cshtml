@@ -1,0 +1,25 @@
+﻿@model List<Minesweeper.Models.ButtonModel> 
+
+@{
+    //ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    AjaxOptions ajaxOptions = new AjaxOptions
+    {
+        HttpMethod = "POST",
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = "game"
+    };
+}
+
+<!DOCTYPE html>
+
+
+
+@using (Ajax.BeginForm("HandleButtonClick", "Game", ajaxOptions, new { id = "gameTable" }))
+{
+    Html.AntiForgeryToken();
+    <div id="game">
+        @Html.Partial("~/Views/Shared/_GameTable.cshtml", Model)
+    </div>
+}
+
