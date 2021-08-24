@@ -12,7 +12,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'msbuild ${app_name}.csproj'
+        sh "msbuild ${app_name}.csproj"
       }
     }
     stage('Deploy') {
