@@ -1,4 +1,4 @@
-def app_name = "minesweeper"
+def app_name = "Minesweeper"
 def app_pool = "DefaultAppPool"
 
 pipeline {
@@ -12,7 +12,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'msbuild'
+        sh 'msbuild ${app_name}.csproj'
       }
     }
     stage('Deploy') {
